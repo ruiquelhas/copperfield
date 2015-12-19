@@ -62,7 +62,7 @@ server.register(plugin, (err) => {
 
 ## Supported File Types
 
-The same as [magik](https://github.com/ruiquelhas/magik).
+The same as [magik](https://github.com/ruiquelhas/magik#supported-file-types).
 
 [coveralls-img]: https://coveralls.io/repos/ruiquelhas/copperfield/badge.svg
 [coveralls-url]: https://coveralls.io/github/ruiquelhas/copperfield
