@@ -37,9 +37,8 @@
     "stream-to-promise": "1.x.x"
   },
   "dependencies": {
-    "boom": "3.x.x",
     "houdin": "1.x.x",
-    "lodash.pluck": "3.x.x"
+    "supervizor": "1.x.x"
   },
   "engines": {
     "node": ">= 4.0.0"

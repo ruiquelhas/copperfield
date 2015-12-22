@@ -39,32 +39,6 @@ lab.experiment('copperfield', () => {
         server.register(setup, done);
     });
 
-    lab.test('should return control to the server if the request method is not POST', (done) => {
-
-        server.inject('/', (response) => {
-
-            Code.expect(response.statusCode).to.equal(200);
-            Code.expect(response.headers['magic-pattern']).to.not.exist();
-            done();
-        });
-    });
-
-    lab.test('should return control to the server if the payload does not contain any file', (done) => {
-
-        const form = new FormData();
-        form.append('foo', 'bar');
-
-        streamToPromise(form).then((payload) => {
-
-            server.inject({ headers: form.getHeaders(), method: 'POST', payload: payload, url: '/' }, (response) => {
-
-                Code.expect(response.statusCode).to.equal(200);
-                Code.expect(response.headers['magic-pattern']).to.not.exist();
-                done();
-            });
-        });
-    });
-
     lab.test('should return error if some file in the payload is not allowed', (done) => {
 
         const png = path.join(os.tmpdir(), 'foo.png');
@@ -84,7 +58,7 @@ lab.experiment('copperfield', () => {
             server.inject({ headers: form.getHeaders(), method: 'POST', payload: payload, url: '/' }, (response) => {
 
                 Code.expect(response.statusCode).to.equal(400);
-                Code.expect(response.headers['magic-pattern']).to.equal('invalid');
+                Code.expect(response.headers['content-validation']).to.equal('failure');
                 Code.expect(response.result).to.include(['message', 'validation']);
                 Code.expect(response.result.message).to.equal('child \"file1\" fails because [\"file1\" type is not allowed]');
                 Code.expect(response.result.validation).to.include(['source', 'keys']);
@@ -110,7 +84,7 @@ lab.experiment('copperfield', () => {
             server.inject({ headers: form.getHeaders(), method: 'POST', payload: payload, url: '/' }, (response) => {
 
                 Code.expect(response.statusCode).to.equal(200);
-                Code.expect(response.headers['magic-pattern']).to.equal('valid');
+                Code.expect(response.headers['content-validation']).to.equal('success');
                 done();
             });
         });

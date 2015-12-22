@@ -21,13 +21,13 @@ $ npm install copperfield
 
 Register the package as a server plugin to enable validation for each route that parses — `parse: true` — and reads the request payload into memory — `output: 'data'`. For every other route with a different configuration, the validation is skipped.
 
-If the validation fails, a [joi](https://github.com/hapijs/joi)-like `400 Bad Request` error is returned alongside an additional `magic-pattern: invalid` response header. If everything is ok, the response will ultimately contain a `magic-pattern: valid` header.
+If the validation fails, a [joi](https://github.com/hapijs/joi)-like `400 Bad Request` error is returned alongside an additional `content-validation: failure` response header. If everything is ok, the response will ultimately contain a `content-validation: success` header.
 
 ### Example
 
 ```js
 const Hapi = require('hapi');
-const Copperfield, = require('copperfield');
+const Copperfield = require('copperfield');
 
 server = new Hapi.Server();
 server.connection({
