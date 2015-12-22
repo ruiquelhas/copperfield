@@ -1,5 +1,16 @@
 # Changelog
 
+## [v2.0.0](https://github.com/ruiquelhas/copperfield/tree/v2.0.0) (2015-12-22)
+[Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v1.0.2...v2.0.0)
+
+**Implemented enhancements:**
+
+- Delegate work to different modules. [\#7](https://github.com/ruiquelhas/copperfield/issues/7)
+
+**Merged pull requests:**
+
+- Simplify the implementation using supervizor [\#8](https://github.com/ruiquelhas/copperfield/pull/8) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v1.0.2](https://github.com/ruiquelhas/copperfield/tree/v1.0.2) (2015-12-20)
 [Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v1.0.1...v1.0.2)
 
