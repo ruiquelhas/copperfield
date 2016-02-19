@@ -1,6 +1,6 @@
 {
   "name": "copperfield",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Server-level houdin validation for hapi",
   "main": "lib/index.js",
   "scripts": {
