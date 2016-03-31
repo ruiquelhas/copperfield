@@ -29,7 +29,7 @@ If the validation fails, a [joi](https://github.com/hapijs/joi)-like `400 Bad Re
 const Hapi = require('hapi');
 const Copperfield = require('copperfield');
 
-server = new Hapi.Server();
+const server = new Hapi.Server();
 server.connection({
     // go nuts
 });
@@ -38,7 +38,7 @@ const plugin = {
     register: Copperfield,
     options: {
       // Allow png files only
-      whitelist: ['png']
+      whitelist: ['image/png']
     }
 };
 
@@ -62,7 +62,7 @@ server.register(plugin, (err) => {
 
 ## Supported File Types
 
-The same as [magik](https://github.com/ruiquelhas/magik#supported-file-types).
+The same as [file-type](https://github.com/sindresorhus/file-type#supported-file-types).
 
 [coveralls-img]: https://coveralls.io/repos/ruiquelhas/copperfield/badge.svg
 [coveralls-url]: https://coveralls.io/github/ruiquelhas/copperfield

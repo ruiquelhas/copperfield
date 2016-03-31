@@ -26,7 +26,7 @@ lab.experiment('copperfield', () => {
         const setup = {
             register: Copperfield,
             options: {
-                whitelist: ['png']
+                whitelist: ['image/png']
             }
         };
 
@@ -43,10 +43,10 @@ lab.experiment('copperfield', () => {
     lab.test('should return error if some file in the payload is not allowed', (done) => {
 
         const png = Path.join(Os.tmpdir(), 'foo.png');
-        Fs.createWriteStream(png).end(new Buffer([0x89, 0x50]));
+        Fs.createWriteStream(png).end(new Buffer('89504e47', 'hex'));
 
         const gif = Path.join(Os.tmpdir(), 'foo.gif');
-        Fs.createWriteStream(gif).end(new Buffer([0x47, 0x49]));
+        Fs.createWriteStream(gif).end(new Buffer('47494638', 'hex'));
 
         const form = new FormData();
         form.append('file1', Fs.createReadStream(gif));
@@ -73,7 +73,7 @@ lab.experiment('copperfield', () => {
     lab.test('should return control to the server if all files the payload are allowed', (done) => {
 
         const png = Path.join(Os.tmpdir(), 'foo.png');
-        Fs.createWriteStream(png).end(new Buffer([0x89, 0x50]));
+        Fs.createWriteStream(png).end(new Buffer('89504e47', 'hex'));
 
         const form = new FormData();
         form.append('file1', Fs.createReadStream(png));
