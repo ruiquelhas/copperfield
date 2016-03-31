@@ -1,5 +1,17 @@
 # Changelog
 
+## [v3.0.0](https://github.com/ruiquelhas/copperfield/tree/v3.0.0) (2016-03-31)
+[Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v2.0.1...v3.0.0)
+
+**Implemented enhancements:**
+
+- Update houdin to version 2.0.0 [\#11](https://github.com/ruiquelhas/copperfield/issues/11)
+- Update dependencies [\#12](https://github.com/ruiquelhas/copperfield/pull/12) ([ruiquelhas](https://github.com/ruiquelhas))
+
+**Closed issues:**
+
+- Add missing peer dependencies [\#9](https://github.com/ruiquelhas/copperfield/issues/9)
+
 ## [v2.0.1](https://github.com/ruiquelhas/copperfield/tree/v2.0.1) (2016-02-19)
 [Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v2.0.0...v2.0.1)
 
