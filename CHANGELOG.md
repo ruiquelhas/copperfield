@@ -1,5 +1,12 @@
 # Changelog
 
+## [v3.0.1](https://github.com/ruiquelhas/copperfield/tree/v3.0.1) (2016-06-07)
+[Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.0...v3.0.1)
+
+**Merged pull requests:**
+
+- Update dependencies [\#13](https://github.com/ruiquelhas/copperfield/pull/13) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v3.0.0](https://github.com/ruiquelhas/copperfield/tree/v3.0.0) (2016-03-31)
 [Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v2.0.1...v3.0.0)
 
