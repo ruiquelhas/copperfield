@@ -37,8 +37,8 @@ server.connection({
 const plugin = {
     register: Copperfield,
     options: {
-      // Allow png files only
-      whitelist: ['image/png']
+        // Allow png files only
+        whitelist: ['image/png']
     }
 };
 
