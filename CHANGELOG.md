@@ -1,5 +1,12 @@
 # Changelog
 
+## [v3.0.2](https://github.com/ruiquelhas/copperfield/tree/v3.0.2) (2016-07-06)
+[Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.1...v3.0.2)
+
+**Merged pull requests:**
+
+- Simplify test suite [\#14](https://github.com/ruiquelhas/copperfield/pull/14) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v3.0.1](https://github.com/ruiquelhas/copperfield/tree/v3.0.1) (2016-06-07)
 [Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.0...v3.0.1)
 
