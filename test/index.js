@@ -16,6 +16,8 @@ const lab = exports.lab = Lab.script();
 lab.experiment('copperfield', () => {
 
     let server;
+    let png;
+    let gif;
 
     lab.before((done) => {
 
@@ -39,13 +41,19 @@ lab.experiment('copperfield', () => {
         server.register(setup, done);
     });
 
+    lab.beforeEach((done) => {
+        // Create fake png file
+        png = Path.join(Os.tmpdir(), 'foo.png');
+        Fs.createWriteStream(png).on('error', done).end(Buffer.from('89504e47', 'hex'), done);
+    });
+
+    lab.beforeEach((done) => {
+        // Create fake gif file
+        gif = Path.join(Os.tmpdir(), 'foo.gif');
+        Fs.createWriteStream(gif).on('error', done).end(Buffer.from('47494638', 'hex'), done);
+    });
+
     lab.test('should return error if some file in the payload is not allowed', (done) => {
-
-        const png = Path.join(Os.tmpdir(), 'foo.png');
-        Fs.createWriteStream(png).end(Buffer.from('89504e47', 'hex'));
-
-        const gif = Path.join(Os.tmpdir(), 'foo.gif');
-        Fs.createWriteStream(gif).end(Buffer.from('47494638', 'hex'));
 
         const form = new Form();
         form.append('file1', Fs.createReadStream(gif));
@@ -67,9 +75,6 @@ lab.experiment('copperfield', () => {
     });
 
     lab.test('should return control to the server if all files the payload are allowed', (done) => {
-
-        const png = Path.join(Os.tmpdir(), 'foo.png');
-        Fs.createWriteStream(png).end(Buffer.from('89504e47', 'hex'));
 
         const form = new Form();
         form.append('file1', Fs.createReadStream(png));
