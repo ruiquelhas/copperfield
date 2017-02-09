@@ -1,5 +1,13 @@
 # Changelog
 
+## [v3.0.5](https://github.com/ruiquelhas/copperfield/tree/v3.0.5) (2017-02-09)
+[Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.4...v3.0.5)
+
+**Fixed bugs:**
+
+- Flaky tests run without file fixtures available [\#17](https://github.com/ruiquelhas/copperfield/issues/17)
+- Update dependencies [\#18](https://github.com/ruiquelhas/copperfield/pull/18) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v3.0.4](https://github.com/ruiquelhas/copperfield/tree/v3.0.4) (2016-11-02)
 [Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.3...v3.0.4)
 
