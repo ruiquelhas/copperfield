@@ -36,7 +36,7 @@
     "multi-part": "2.x.x"
   },
   "dependencies": {
-    "houdin": "2.x.x",
+    "houdin": "2.0.6",
     "supervizor": "1.x.x"
   },
   "engines": {
