@@ -1,5 +1,16 @@
 # Changelog
 
+## [v3.0.6](https://github.com/ruiquelhas/copperfield/tree/v3.0.6) (2017-11-02)
+[Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.5...v3.0.6)
+
+**Closed issues:**
+
+- houdin breaking changes [\#19](https://github.com/ruiquelhas/copperfield/issues/19)
+
+**Merged pull requests:**
+
+- Lock houdin version to avoid breaking changes [\#20](https://github.com/ruiquelhas/copperfield/pull/20) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v3.0.5](https://github.com/ruiquelhas/copperfield/tree/v3.0.5) (2017-02-09)
 [Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.4...v3.0.5)
 
