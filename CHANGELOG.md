@@ -1,5 +1,16 @@
 # Changelog
 
+## [v4.0.0](https://github.com/ruiquelhas/copperfield/tree/v4.0.0) (2017-11-07)
+[Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.6...v4.0.0)
+
+**Closed issues:**
+
+- Add support for hapi v17 [\#21](https://github.com/ruiquelhas/copperfield/issues/21)
+
+**Merged pull requests:**
+
+- Add support for hapi v17 [\#22](https://github.com/ruiquelhas/copperfield/pull/22) ([ruiquelhas](https://github.com/ruiquelhas))
+
 ## [v3.0.6](https://github.com/ruiquelhas/copperfield/tree/v3.0.6) (2017-11-02)
 [Full Changelog](https://github.com/ruiquelhas/copperfield/compare/v3.0.5...v3.0.6)
 
